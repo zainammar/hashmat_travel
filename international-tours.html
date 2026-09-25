@@ -1,21 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>International Tour Packages | Hashmat Travel & Tours</title>
-<meta name="description" content="International tour packages from Pakistan covering Baku, Istanbul, Dubai, Malaysia, the Maldives and Saudi Arabia.">
-<meta property="og:title" content="International Tour Packages | Hashmat Travel & Tours">
-<meta property="og:description" content="International tour packages from Pakistan covering Baku, Istanbul, Dubai, Malaysia, the Maldives and Saudi Arabia.">
-<meta property="og:type" content="website">
-<link rel="canonical" href="{REPLACE_WITH_YOUR_DOMAIN}">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>%E2%9C%88%EF%B8%8F</text></svg>">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="assets/css/responsive.css">
-</head>
-<body>
+
+  <div id="content1" class="content-box">Loading first file...</div>
+      
 <!-- ============ PRELOADER ============ -->
 <div id="preloader" aria-hidden="true">
   <div class="badge"><img src="assets/images/logo/hashmat-logo.png" alt="" style="width:min(280px,58vw)"></div>
@@ -29,27 +16,7 @@
 <a class="whatsapp-fab" href="https://wa.me/923009224346" target="_blank" rel="noopener">WhatsApp us</a>
 <button id="top" aria-label="Back to top">&uarr;</button>
 <!-- ============ HEADER / NAVIGATION ============ -->
-<header>
-  <div class="w">
-    <a class="logo" href="index.html" aria-label="Hashmat Travel & Tours home">
-      <img src="assets/images/logo/hashmat-logo.png" alt="Hashmat Travel & Tours logo">
-    </a>
-    <button class="burger" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
-    <nav id="nav" aria-label="Primary">
-      <ul style="list-style:none;display:flex;gap:26px;align-items:center;margin:0;padding:0">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="hajj-umrah.html">Hajj & Umrah</a></li>
-      <li><a href="international-tours.html" class="on">International Tours</a></li>
-      <li><a href="domestic-tours.html">Domestic Tours</a></li>
-      <li><a href="visas.html">Visa Services</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-      <li><a class="btn gold" href="contact.html">Plan Your Journey</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+
 <main>
 <!-- ============ HERO ============ -->
 <section class="hero sm">
@@ -257,5 +224,33 @@
 <script src="assets/js/animations.js"></script>
 <script src="assets/js/booking.js"></script>
 <script src="assets/js/gallery.js"></script>
+
+<div id="content2" class="content-box">Loading second file...</div>
+<!-- Header Fotter -->
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+  // You can change the file names here
+  const filesToLoad = {
+    content1: 'page1.html',
+    content2: 'page2.html'
+  };
+
+  // Loop through and load each file into its matching div
+  for (const [divId, filename] of Object.entries(filesToLoad)) {
+    fetch(filename)
+      .then(response => {
+        if (!response.ok) throw new Error(`File not found: ${filename}`);
+        return response.text();
+      })
+      .then(data => {
+        document.getElementById(divId).innerHTML = data;
+      })
+      .catch(error => {
+        document.getElementById(divId).innerHTML = `<p style="color:red">${error.message}</p>`;
+      });
+  }
+});
+</script>
+
 </body>
 </html>
