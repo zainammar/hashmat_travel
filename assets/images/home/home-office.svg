@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#093A87"/><stop offset="100%" stop-color="#020a1a"/></linearGradient>
+<radialGradient id="r" cx="75%" cy="20%" r="60%"><stop offset="0%" stop-color="#FDC453" stop-opacity="0.35"/><stop offset="100%" stop-color="#FDC453" stop-opacity="0"/></radialGradient></defs>
+<rect width="800" height="600" fill="url(#g)"/><rect width="800" height="600" fill="url(#r)"/>
+<text x="24" y="576" font-family="Manrope,Arial,sans-serif" font-size="28" fill="#ffffff" opacity="0.85">Homepage hero – add a premium Hajj/Umrah travel photo</text>
+</svg>

@@ -1,0 +1,71 @@
+/* =========================================================
+   HASHMAT TRAVEL & TOURS — RESPONSIVE STYLESHEET
+   Loaded after style.css. Contains every @media rule so
+   breakpoints stay easy to find and edit in one place.
+   Breakpoints: 1100px (nav collapses), 900px, 800px, 600px, 560px
+   ========================================================= */
+
+/* ---------- NAVIGATION -> MOBILE MENU (<=1100px) ---------- */
+@media (max-width: 1100px) {
+  .burger { display: block; z-index: 60; position: relative; }
+
+  nav#nav {
+    position: fixed; inset: 0; background: #020a1a; flex-direction: column;
+    justify-content: center; gap: 18px; font-size: 1.6rem;
+    clip-path: circle(0% at 92% 6%); transition: clip-path .5s; visibility: hidden;
+  }
+  nav#nav.o { clip-path: circle(150% at 92% 6%); visibility: visible; }
+  nav#nav a { font: 400 2rem 'Fraunces', serif; }
+  nav#nav .btn { font: 700 15px 'Manrope', sans-serif; }
+}
+
+/* ---------- GRIDS ---------- */
+@media (max-width: 900px) {
+  .grid-3, .grid-4 { grid-template-columns: 1fr 1fr; }
+  .grid-2 { grid-template-columns: 1fr; }
+  .bento { grid-template-columns: 1fr 1fr; }
+  .bento .c3 { grid-column: span 2; }
+}
+@media (max-width: 800px) {
+  .trust-strip { grid-template-columns: 1fr 1fr; }
+  .field-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+  .grid-3, .grid-4 { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .field-grid { grid-template-columns: 1fr; }
+  .field.w2 { grid-column: auto; }
+  .footer-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 900px) {
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* ---------- MASONRY GALLERY ---------- */
+@media (max-width: 900px) { .masonry { columns: 2 220px; } }
+@media (max-width: 560px) { .masonry { columns: 1 100%; } }
+
+/* ---------- HERO TEXT ---------- */
+@media (max-width: 700px) {
+  .hero { padding: 130px 0 100px; }
+  .hero .plane { display: none; } /* keeps small screens uncluttered */
+}
+
+/* ---------- OVERLAPPING EDITORIAL IMAGES ---------- */
+@media (max-width: 800px) {
+  .overlap { padding-bottom: 0; }
+  .overlap .photo-frame.secondary { position: static; width: 100%; margin-top: 18px; border: 0; }
+  .planner.overlap-up { margin-top: 30px; }
+}
+
+/* ---------- MOBILE SAFE-AREA / VIEWPORT ---------- */
+:root {
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* Prevent any accidental horizontal scroll from wide sections on small screens */
+@media (max-width: 480px) {
+  .w { width: 94%; }
+}
