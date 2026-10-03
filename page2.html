@@ -1,41 +1,95 @@
 <!-- ============ FOOTER ============ -->
 <footer>
-    <div class="w">
-      <div class="footer-grid">
-        <div>
-          <a class="logo" href="index.html"><img src="assets/images/logo/hashmat-logo.png" alt="Hashmat Travel & Tours logo"></a>
-          <p>Hajj, Umrah and worldwide travel, planned personally from the first conversation until you return home.</p>
-        </div>
-        <div>
-          <h4>Quick Links</h4>
-          <a href="index.html">Home</a>
-          <a href="about.html">About Us</a>
-          <a href="hajj-umrah.html">Hajj &amp; Umrah</a>
-          <a href="gallery.html">Gallery</a>
-          <a href="contact.html">Contact Us</a>
-        </div>
-        <div>
-          <h4>Travel Services</h4>
-          <a href="hajj-umrah.html">Hajj &amp; Umrah</a>
-          <a href="international-tours.html">International Tours</a>
-          <a href="domestic-tours.html">Domestic Tours</a>
-          <a href="visas.html">Visa Services</a>
-        </div>
-        <!-- <div>
-          <h4>Reach Us</h4>
-          <a href="tel:+923009224346">+92 300 922 4346</a>
-          <a href="tel:+923237189361">+92 323 718 9361</a>
-          <a href="https://wa.me/923009224346" target="_blank" rel="noopener">WhatsApp</a>
-          <p style="margin-top:8px">Edward House CL-5/15, Sir Abdullah Haroon Road, Civil Lines, Karachi, Pakistan</p>
-          
-          <div class="field-error" id="newsletter-message" style="color:var(--gold)"></div>
-        </div>
+  <div class="w">
+    <div class="footer-grid">
+      <div>
+        <a class="logo" href="index.html"><img src="assets/images/logo/hashmat-logo.png" alt="Hashmat Travel & Tours logo"></a>
+        <p>Hajj, Umrah and worldwide travel, planned personally from the first conversation until you return home.</p>
       </div>
-      <div class="copyright">&copy; <span id="year"></span> Hashmat Travel &amp; Tours. All rights reserved.</div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="hajj-umrah.html">Hajj &amp; Umrah</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div>
+        <h4>Travel Services</h4>
+        <a href="hajj-umrah.html">Hajj &amp; Umrah</a>
+        <a href="international-tours.html">International Tours</a>
+        <a href="domestic-tours.html">Domestic Tours</a>
+        <a href="visas.html">Visa Services</a>
+      </div>
+      <div>
+        <h4>Reach Us</h4>
+        <a href="tel:+923009224346">+92 300 922 4346</a>
+        <a href="tel:+923237189361">+92 323 718 9361</a>
+        <a href="https://wa.me/923009224346" target="_blank" rel="noopener">WhatsApp</a>
+        <p style="margin-top:8px">Edward House CL-5/15, Sir Abdullah Haroon Road, Civil Lines, Karachi, Pakistan</p>
+        
+        <div class="field-error" id="newsletter-message" style="color:var(--gold)"></div>
+      </div>
     </div>
-  </footer>
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/animations.js"></script>
-  <script src="assets/js/booking.js"></script> -->
-  </body>
-  </html>
+    <div class="copyright">&copy; <span id="year"></span> Hashmat Travel &amp; Tours. All rights reserved.</div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/animations.js"></script>
+<script src="assets/js/booking.js"></script>
+</body>
+</html>
+
+<script>
+  const counters = document.querySelectorAll(".counter");
+  
+  const observer = new IntersectionObserver((entries, observer) => {
+  
+    entries.forEach(entry => {
+  
+      if (entry.isIntersecting) {
+  
+        const counter = entry.target;
+        const target = Number(counter.dataset.target);
+  
+        let count = 0;
+        const duration = 1500; // animation time
+        const startTime = performance.now();
+  
+        function update(currentTime) {
+  
+          const progress = Math.min(
+            (currentTime - startTime) / duration,
+            1
+          );
+  
+          count = Math.floor(progress * target);
+  
+          counter.innerHTML =
+            count + (target === 98 ? "%" : "+");
+  
+          if (progress < 1) {
+            requestAnimationFrame(update);
+          } else {
+            counter.innerHTML =
+              target + (target === 98 ? "%" : "+");
+          }
+        }
+  
+        requestAnimationFrame(update);
+  
+        // Sirf pehli dafa chale
+        observer.unobserve(counter);
+      }
+  
+    });
+  
+  }, {
+    threshold: 0.5
+  });
+  
+  
+  counters.forEach(counter => {
+    observer.observe(counter);
+  });
+  </script>

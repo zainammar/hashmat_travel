@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>About Us | Hashmat Travel & Tours</title>
-<meta name="description" content="Learn how Hashmat Travel & Tours plans Hajj, Umrah and worldwide travel from Karachi with personal attention throughout.">
-<meta property="og:title" content="About Us | Hashmat Travel & Tours">
-<meta property="og:description" content="Learn how Hashmat Travel & Tours plans Hajj, Umrah and worldwide travel from Karachi with personal attention throughout.">
+<title>International Tour Packages | Hashmat Travel & Tours</title>
+<meta name="description" content="International tour packages from Pakistan covering Baku, Istanbul, Dubai, Malaysia, the Maldives and Saudi Arabia.">
+<meta property="og:title" content="International Tour Packages | Hashmat Travel & Tours">
+<meta property="og:description" content="International tour packages from Pakistan covering Baku, Istanbul, Dubai, Malaysia, the Maldives and Saudi Arabia.">
 <meta property="og:type" content="website">
 <link rel="canonical" href="{REPLACE_WITH_YOUR_DOMAIN}">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>%E2%9C%88%EF%B8%8F</text></svg>">
@@ -14,7 +14,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="assets/css/responsive.css">
-<link rel="stylesheet" href="assets/css/take.css">
 </head>
 <body>
 <!-- ============ PRELOADER ============ -->
@@ -33,299 +32,187 @@
 <header>
   <div class="w">
     <a class="logo" href="index.html" aria-label="Hashmat Travel & Tours home">
-      <img src="assets/images/logo/hashmat-logo.png" style="width: 20px;" alt="Hashmat Travel & Tours logo">
+      <img src="assets/images/logo/hashmat-logo.png" alt="Hashmat Travel & Tours logo">
     </a>
     <button class="burger" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
     <nav id="nav" aria-label="Primary">
-      <ul style="font-size:20px;list-style:none;display:flex;gap:26px;align-items:center;margin:0;padding:0">
+      <ul style="list-style:none;display:flex;gap:26px;align-items:center;margin:0;padding:0">
       <li><a href="index.html">Home</a></li>
-      <li><a href="about.html" class="on">About Us</a></li>
+      <li><a href="about.html">About Us</a></li>
       <li><a href="hajj-umrah.html">Hajj & Umrah</a></li>
-      <li><a href="international-tours.html">International Tours</a></li>
+      <li><a href="international-tours.html" class="on">International Tours</a></li>
       <li><a href="domestic-tours.html">Domestic Tours</a></li>
       <li><a href="visas.html">Visa Services</a></li>
       <li><a href="gallery.html">Gallery</a></li>
       <li><a href="contact.html">Contact Us</a></li>
       <li><a class="btn gold" href="contact.html">Plan Your Journey</a></li>
-      
       </ul>
     </nav>
   </div>
 </header>
 <main>
 <!-- ============ HERO ============ -->
-<section class="hero">
-  <div class="bg" data-parallax> <img src="https://drive.google.com/thumbnail?id=12hoxCYbXtL2qh4OS1aYrZx9Y0wEGOaEV&sz=w1200">alt="Pilgrims and travellers at a premium destination" loading="eager"></div>
-  <!--<svg class="plane" viewBox="0 0 560 240" fill="none" aria-hidden="true">
+<section class="hero sm">
+  <div class="bg" data-parallax><img src="assets/images/international/hero.svg" alt="International travel destinations" loading="eager"></div>
+  <svg class="plane" viewBox="0 0 560 240" fill="none" aria-hidden="true">
     <path class="dash" d="M10 220C150 200 260 120 430 60" stroke="#FDC453" stroke-width="2"/>
     <g transform="translate(430 60) rotate(-24)">
       <path d="M0 0 42 12 0 24 8 12z" fill="#fff"/>
       <path d="M14 12 -6 -10M14 12-6 34" stroke="#fff" stroke-width="5"/>
     </g>
-  </svg>-->
+  </svg>
   <div class="w">
-    <p style="text-transform:uppercase;letter-spacing:.14em;font-size:12.5px;color:var(--gold);font-weight:700" class="reveal in">Hashmat Travel & Tours</p>
-    <h1 class="split-text">Your Journey of Faith, Comfort &amp; Peace of Mind</h1>
-    <p class="lead reveal in">Hajj, Umrah and worldwide travel, arranged professionally and personally from the first conversation until you return.</p>
-    <div class="cta reveal in"><a class="btn gold" href="hajj-umrah.html">Explore Hajj &amp; Umrah</a><a class="btn outline" href="#plan">Plan Your Journey</a></div>
+    <p style="text-transform:uppercase;letter-spacing:.14em;font-size:12.5px;color:var(--gold);font-weight:700" class="reveal in">International Tours</p>
+    <h1 class="split-text">The World, Arranged For You</h1>
+    <p class="lead reveal in">Baku, Istanbul, Dubai, Malaysia, the Maldives and beyond, with flights, stays and visas coordinated.</p>
+    <div class="cta reveal in"><a class="btn gold" href="#destinations">Browse Destinations</a></div>
   </div>
   <div class="scroll-indicator"></div>
 </section>
 
-
-<!-- ============ TRUST STRIP ============ -->
-<!--<section style="padding-top:60px">
+<!-- ============ DESTINATIONS ============ -->
+<section id="destinations">
   <div class="w">
-    <div class="trust-strip">
-      <div class="reveal">Hajj &amp; Umrah Support</div>
-      <div class="reveal">Hotel &amp; Transport</div>
-      <div class="reveal">Visa Assistance</div>
-      <div class="reveal">Personal Planning</div>
+    <div class="chips" data-filter-group=".international-grid .item">
+      <button class="chip on" data-key="all">All</button>
+      <button class="chip" data-key="eu">Europe &amp; Caucasus</button>
+      <button class="chip" data-key="gulf">Gulf</button>
+      <button class="chip" data-key="asia">Asia</button>
     </div>
+    <div class="grid grid-3 international-grid"><article class="card item reveal" data-category="eu" style="--delay:0.0s">
+  <div class="photo-frame"><img src="https://drive.google.com/thumbnail?id=1HHA4l71ffpEi7q_syf_0j9X_Uw4-ajO_&sz=w1200"> alt="Baku, Azerbaijan" loading="lazy"></div>
+  <div class="body"><h3>Baku, Azerbaijan</h3>
+    <p style="color:var(--mut);font-size:14px">A trip built around your dates, hotel category and pace.</p>
+    <ul class="specs"><li><b>Duration:</b> <span class="placeholder-value" contenteditable="false">Add your details</span></li><li><b>Package:</b> <span class="placeholder-value" contenteditable="false">Add your details</span></li></ul>
+    <a class="btn blue" href="contact.html" style="align-self:flex-start;margin-top:auto">Request Itinerary</a>
+  </div>
+</article>
+<article class="card item reveal" data-category="eu" style="--delay:0.08s">
+  <div class="photo-frame"><img src="https://drive.google.com/thumbnail?id=181_8AV53fbnaBiTUmgW9JTWqNKn-GXHq&sz=w1200"> alt="Istanbul, Turkey" loading="lazy"></div>
+  <div class="body"><h3>Istanbul, Turkey</h3>
+    <p style="color:var(--mut);font-size:14px">A trip built around your dates, hotel category and pace.</p>
+    <ul class="specs"><li><b>Duration:</b> <span class="placeholder-value" contenteditable="false">Add your details</span></li><li><b>Package:</b> <span class="placeholder-value" contenteditable="false">Add your details</span></li></ul>
+    <a class="btn blue" href="contact.html" style="align-self:flex-start;margin-top:auto">Request Itinerary</a>
+  </div>
+</article>
+<article class="card item reveal" data-category="gulf" style="--delay:0.16s">
+  <div class="photo-frame"><img src="https://drive.google.com/thumbnail?id=1MeZVjXMuMvA3LQe40uXhPahhGtiw-A1a&sz=w1200"> alt="Dubai, UAE" loading="lazy"></div>
+  <div class="body"><h3>Dubai, UAE</h3>
+    <p style="color:var(--mut);font-size:14px">A trip built around your dates, hotel category and pace.</p>
+    <ul class="specs"><li><b>Duration:</b> <span class="placeholder-value" contenteditable="false">Add your details</span></li><li><b>Package:</b> <span class="placeholder-value" contenteditable="false">Add your details</span></li></ul>
+    <a class="btn blue" href="contact.html" style="align-self:flex-start;margin-top:auto">Request Itinerary</a>
+  </div>
+</article>
+<article class="card item reveal" data-category="asia" style="--delay:0.0s">
+  <div class="photo-frame"><img src="https://drive.google.com/thumbnail?id=1aCvVWx_UgwP2NL_XeB3-IQEMMTihUjSX&sz=w1200"> alt="Malaysia" loading="lazy"></div>
+  <div class="body"><h3>Malaysia</h3>
+    <p style="color:var(--mut);font-size:14px">A trip built around your dates, hotel category and pace.</p>
+    <ul class="specs"><li><b>Duration:</b> <span class="placeholder-value" contenteditable="false">Add your details</span></li><li><b>Package:</b> <span class="placeholder-value" contenteditable="false">Add your details</span></li></ul>
+    <a class="btn blue" href="contact.html" style="align-self:flex-start;margin-top:auto">Request Itinerary</a>
+  </div>
+</article>
+<article class="card item reveal" data-category="asia" style="--delay:0.08s">
+  <div class="photo-frame"><img src="https://drive.google.com/thumbnail?id=1-cWN5pPoeHoIIOH8jc_AyM_sWrCfyst1&sz=w1200"> alt="Maldives" loading="lazy"></div>
+  <div class="body"><h3>Maldives</h3>
+    <p style="color:var(--mut);font-size:14px">A trip built around your dates, hotel category and pace.</p>
+    <ul class="specs"><li><b>Duration:</b> <span class="placeholder-value" contenteditable="false">Add your details</span></li><li><b>Package:</b> <span class="placeholder-value" contenteditable="false">Add your details</span></li></ul>
+    <a class="btn blue" href="contact.html" style="align-self:flex-start;margin-top:auto">Request Itinerary</a>
+  </div>
+</article>
+<article class="card item reveal" data-category="gulf" style="--delay:0.16s">
+  <div class="photo-frame"><img src="https://drive.google.com/thumbnail?id=1-JyRAGRjGzdWcYXPA4aCZ8QRYqeRgyzO&sz=w1200"> alt="Saudi Arabia" loading="lazy"></div>
+  <div class="body"><h3>Saudi Arabia</h3>
+    <p style="color:var(--mut);font-size:14px">A trip built around your dates, hotel category and pace.</p>
+    <ul class="specs"><li><b>Duration:</b> <span class="placeholder-value" contenteditable="false">Add your details</span></li><li><b>Package:</b> <span class="placeholder-value" contenteditable="false">Add your details</span></li></ul>
+    <a class="btn blue" href="contact.html" style="align-self:flex-start;margin-top:auto">Request Itinerary</a>
+  </div>
+</article></div>
   </div>
 </section>
-</div>-->
 
-</div>
-
-
-
-<!-- ============ ABOUT (homepage preview) ============ -->
-<!--<section>
-  <div class="w grid grid-2" style="align-items:center;gap:60px">
-    <div class="overlap reveal">
-      <div class="photo-frame" style="min-height:460px"><img src="assets/images/home/home-office.svg" alt="Pilgrims arriving at the Haram" loading="lazy"></div>
-      <div class="secondary"><div class="photo-frame"><img src="assets/images/home/home-office.svg" alt="Hashmat Travel & Tours Karachi office" loading="lazy"></div></div>
-    </div>
-    <div>
-      <h2 class="split-text">Travel Managed By People Who Answer Your Call</h2>
-      <p class="lead">Hashmat Travel &amp; Tours arranges flights, hotels, transfers and visas in one plan. <span class="placeholder-value" contenteditable="false">Add your details</span></p>
-      <a class="btn blue" href="about.html" style="margin-top:26px">About Hashmat</a>
-    </div>
-  </div>
-</section>-->
-
-
-<!-- ============ about 2 ============ -->
-
-<section class="about-section">
-<div class="about-container">
-
-<!-- LEFT IMAGE AREA -->
-
-<div class="image-wrapper reveal">
-    <div class="main-image image-hover">
-        <img src="https://drive.google.com/thumbnail?id=1Mb29MbwUFegX1hGZOVQl8VDwBnL-81jS&sz=w1200"> alt="Pilgrims">
-    </div>
-    <div class="small-image image-hover">
-          <img src="https://drive.google.com/thumbnail?id=16jATvTsCH9K6TRYN85QV_cv2y9bcBjLr&sz=w1200"> alt="Pilgrims">
-    </div>
-</div>
-
-<!-- RIGHT CONTENT -->
-
-
-<div class="about-content reveal">
-      <h2 class="split-text">About Us</h2>
-<p>
-Hashmat Travel & Tours arranges flights,
-hotels, transfers and visas in one complete plan.
-We provide trusted travel assistance for Hajj,
-Umrah and worldwide journeys.
-</p>
-<a href="#" class="about-btn">
-About Hashmat
-</a>
-</div>
-</div>
-</section>
-
-
-<!-- ============ PACKAGES (featured) ============ -->
-<section class="soft">
-  <div class="w">
-    <div class="section-head">
-      <h2 class="split-text">Hajj &amp; Umrah Packages</h2>
-      <a class="btn blue" href="hajj-umrah.html">All Packages</a>
-    </div>
-    <div class="grid grid-3">
-      <article class="card reveal">
-        <div class="photo-frame"><img src="https://drive.google.com/thumbnail?id=1z1kVhz3v2F4Exf3OeMpoI6L-31dNhx4B&sz=w1200"> alt="Umrah package" loading="lazy"></div>
-        <div class="body"><h3>Umrah Packages</h3>
-          <ul class="specs"><li><b>Duration:</b> <span class="placeholder-value" contenteditable="false">Add your details</span></li><li><b>Hotel:</b> <span class="placeholder-value" contenteditable="false">Add your details</span></li><li><b>Transport:</b> Private or shared</li><li><b>Visa:</b> Assistance included</li></ul>
-          <div class="price">Price: <span class="placeholder-value" contenteditable="false">Add your details</span></div>
-          <a class="btn blue" href="hajj-umrah.html" style="align-self:flex-start;margin-top:8px">Enquire</a>
+<!-- ============ TRAVEL PLANNER ============ -->
+<section class="soft"><div class="w"><!-- ============ TRAVEL PLANNER ============ -->
+<div class="planner reveal">
+  <h2 style="font-size:clamp(1.7rem,3vw,2.4rem)">Design Your Journey</h2>
+  <p class="lead" style="margin-top:8px">Tell us what you have in mind. A travel expert will reply with a plan built around it.</p>
+  <form class="planner-form" action="php/submit-travel-plan.php" method="post" novalidate>
+    <div class="field-grid">
+      <div class="field"><label for="full_name">Full Name</label><input id="full_name" name="full_name" required autocomplete="name"></div>
+      <div class="field"><label for="phone">Phone Number</label><input id="phone" name="phone" type="tel" required autocomplete="tel"></div>
+      <div class="field"><label for="email">Email Address</label><input id="email" name="email" type="email" autocomplete="email"></div>
+      <div class="field">
+        <label for="travel_type">Travel Type</label>
+        <select id="travel_type" name="travel_type">
+          <option>Umrah</option><option>Hajj</option><option>International tour</option>
+          <option>Domestic tour</option><option>Visa only</option><option>Flights &amp; hotels</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="destination">Destination</label>
+        <select id="destination" name="destination">
+          <option>Makkah &amp; Madinah</option><option>Baku, Azerbaijan</option><option>Istanbul, Turkey</option>
+          <option>Dubai, UAE</option><option>Malaysia</option><option>Maldives</option><option>Saudi Arabia</option>
+          <option>Hunza / Skardu</option><option>Swat / Naran / Murree</option><option>Other</option>
+        </select>
+      </div>
+      <div class="field"><label for="departure_city">Departure City</label><input id="departure_city" name="departure_city" value="Karachi"></div>
+      <div class="field"><label for="return_city">Return City</label><input id="return_city" name="return_city" value="Karachi"></div>
+      <div class="field">
+        <label for="hotel_category">Hotel Category</label>
+        <select id="hotel_category" name="hotel_category">
+          <option>Economy</option><option>3 star</option><option>4 star</option><option>5 star</option>
+          <option>Close to the Haram / preferred area</option>
+        </select>
+      </div>
+      <div class="field"><label for="arrival_date">Arrival Date</label><input id="arrival_date" name="arrival_date" type="date"></div>
+      <div class="field"><label for="departure_date">Departure Date</label><input id="departure_date" name="departure_date" type="date"></div>
+      <div class="field"><label for="nights">Number of Nights</label><input id="nights" name="nights" readonly placeholder="Calculated automatically"></div>
+      <div class="field">
+        <label for="room_requirement">Room Requirement</label>
+        <select id="room_requirement" name="room_requirement">
+          <option>Double</option><option>Triple</option><option>Quad</option><option>Family suite</option><option>Single</option>
+        </select>
+      </div>
+      <div class="field" data-field="adults">
+        <label>Adults</label>
+        <div class="counter">
+          <button type="button" data-count-btn="-1" aria-label="Fewer adults">&minus;</button>
+          <b data-count-value>2</b>
+          <button type="button" data-count-btn="1" aria-label="More adults">+</button>
         </div>
-      </article>
-      <article class="card reveal" style="--delay:.08s">
-        <div class="photo-frame"><img src="https://drive.google.com/thumbnail?id=1YyizBRXyNhyXaLEgLanCwgczyZuS-Lze&sz=w1200"> alt="Hajj package" loading="lazy"></div>
-        <div class="body"><h3>Hajj Packages</h3>
-          <ul class="specs"><li><b>Duration:</b> <span class="placeholder-value" contenteditable="false">Add your details</span></li><li><b>Hotel:</b> <span class="placeholder-value" contenteditable="false">Add your details</span></li><li><b>Transport:</b> Private or shared</li><li><b>Visa:</b> Assistance included</li></ul>
-          <div class="price">Price: <span class="placeholder-value" contenteditable="false">Add your details</span></div>
-          <a class="btn blue" href="hajj-umrah.html" style="align-self:flex-start;margin-top:8px">Enquire</a>
+        <input type="hidden" name="adults" value="2">
+      </div>
+      <div class="field" data-field="children">
+        <label>Children</label>
+        <div class="counter">
+          <button type="button" data-count-btn="-1" aria-label="Fewer children">&minus;</button>
+          <b data-count-value>0</b>
+          <button type="button" data-count-btn="1" aria-label="More children">+</button>
         </div>
-      </article>
-      <article class="card reveal" style="--delay:.16s">
-        <div class="photo-frame"><img src="https://drive.google.com/thumbnail?id=1lJz_vpRU3IX-9Th6qWVFnOCHO88iNTHx&sz=w1200"> alt="Family Umrah package" loading="lazy"></div>
-        <div class="body"><h3>Family Umrah</h3>
-          <ul class="specs"><li><b>Duration:</b> <span class="placeholder-value" contenteditable="false">Add your details</span></li><li><b>Hotel:</b> <span class="placeholder-value" contenteditable="false">Add your details</span></li><li><b>Transport:</b> Private or shared</li><li><b>Visa:</b> Assistance included</li></ul>
-          <div class="price">Price: <span class="placeholder-value" contenteditable="false">Add your details</span></div>
-          <a class="btn blue" href="hajj-umrah.html" style="align-self:flex-start;margin-top:8px">Enquire</a>
-        </div>
-      </article>
+        <input type="hidden" name="children" value="0">
+      </div>
+      <div class="field w2">
+        <label for="visa_requirement">Visa Requirement</label>
+        <select id="visa_requirement" name="visa_requirement">
+          <option>I need visa assistance</option><option>I already have a visa</option><option>Not sure yet</option>
+        </select>
+      </div>
+      <div class="field w4">
+        <label for="additional_requirements">Additional Requirements</label>
+        <textarea id="additional_requirements" name="additional_requirements" rows="2"></textarea>
+      </div>
     </div>
-  </div>
-</section>
-
-<!-- ============ SPIRITUAL DESTINATIONS ============ -->
-<!--<section class="black">
-  <div class="w">
-    <h2 class="split-text">Places At The Heart Of The Journey</h2>
-    <div class="grid grid-3" style="margin-top:36px">
-      <div class="reveal"><div class="photo-frame" style="min-height:300px"><img src="assets/images/home/home-office.svg"  alt="Makkah" loading="lazy"></div><h3 style="margin-top:14px">Makkah</h3></div>
-      <div class="reveal" style="--delay:.1s"><div class="photo-frame" style="min-height:300px"><img src="assets/images/home/home-office.svg"  alt="Madinah" loading="lazy"></div><h3 style="margin-top:14px">Madinah</h3></div>
-      <div class="reveal" style="--delay:.2s"><div class="photo-frame" style="min-height:300px"><img src="assets/images/home/home-office.svg"  alt="Mina, Arafat and Muzdalifah" loading="lazy"></div><h3 style="margin-top:14px">Mina, Arafat &amp; Muzdalifah</h3></div>
+    <input type="text" name="website" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <div style="display:flex;gap:12px;flex-wrap:wrap">
+      <button class="btn blue" type="submit">Get My Travel Plan</button>
+      <a class="btn gold" href="https://wa.me/923009224346" target="_blank" rel="noopener">Talk to a Travel Expert</a>
     </div>
-  </div>
-</section>-->
-
-<!-- ============ PROCESS ============ -->
-<!--<section>
-  <div class="w grid grid-2" style="gap:60px">
-    <div><h2 class="split-text">How We Plan Your Journey</h2><p class="lead">A clear path from first call to safe return.</p></div>
-    <div>
-      <div class="step reveal"><h3>Tell us your plan</h3><p style="opacity:.85;max-width:52ch">Share dates, group size and preferences.</p></div>
-<div class="step reveal"><h3>We shape the itinerary</h3><p style="opacity:.85;max-width:52ch">Flights, hotels and transport matched to your budget.</p></div>
-<div class="step reveal"><h3>Documents and visa</h3><p style="opacity:.85;max-width:52ch">We guide the checklist and submissions.</p></div>
-<div class="step reveal"><h3>Travel with support</h3><p style="opacity:.85;max-width:52ch">Assistance stays available until you are home.</p></div>
-    </div>
-  </div>
-</section>-->
-
-<!-- ============ SERVICES ============ -->
-<!--<section class="soft">
-  <div class="w">
-    <h2 class="split-text">Complete Travel Services</h2>
-    <div class="grid grid-3" style="margin-top:36px">
-      <div class="card reveal" style="padding:28px;--delay:0.0s"><h3>Flight Arrangements</h3></div><div class="card reveal" style="padding:28px;--delay:0.08s"><h3>Hotel Arrangements</h3></div><div class="card reveal" style="padding:28px;--delay:0.16s"><h3>Airport Transfers</h3></div><div class="card reveal" style="padding:28px;--delay:0.24s"><h3>Transportation</h3></div><div class="card reveal" style="padding:28px;--delay:0.32s"><h3>Customized Packages</h3></div><div class="card reveal" style="padding:28px;--delay:0.4s"><h3>Visa Assistance</h3></div>
-    </div>
-  </div>
-</section>-->
-
-<!-- ============ FEATURED INTERNATIONAL TOURS ============ -->
-<section>
-  <div class="w">
-    <div class="section-head"><h2 class="split-text">International Tours</h2><a class="btn blue" href="international-tours.html">All Destinations</a></div>
-    <div class="grid grid-3">
-      <article class="card reveal"><div class="photo-frame"><img src="https://drive.google.com/thumbnail?id=1HHA4l71ffpEi7q_syf_0j9X_Uw4-ajO_&sz=w1200"> alt="Baku, Azerbaijan" loading="lazy"></div><div class="body"><h3>Baku, Azerbaijan</h3><p style="color:var(--mut);font-size:14px">A trip built around your dates, hotel category and pace.</p><ul class="specs"><li><b>Duration:</b> <span class="placeholder-value" contenteditable="false">Add your details</span></li></ul><a class="btn blue" href="international-tours.html" style="margin-top:auto">Request Itinerary</a></div></article>
-      <article class="card reveal" style="--delay:.08s"><div class="photo-frame"><img src="https://drive.google.com/thumbnail?id=181_8AV53fbnaBiTUmgW9JTWqNKn-GXHq&sz=w1200">  alt="Istanbul, Turkey" loading="lazy"></div><div class="body"><h3>Istanbul, Turkey</h3><p style="color:var(--mut);font-size:14px">A trip built around your dates, hotel category and pace.</p><ul class="specs"><li><b>Duration:</b> <span class="placeholder-value" contenteditable="false">Add your details</span></li></ul><a class="btn blue" href="international-tours.html" style="margin-top:auto">Request Itinerary</a></div></article>
-      <article class="card reveal" style="--delay:.16s"><div class="photo-frame"><img src="https://drive.google.com/thumbnail?id=1MeZVjXMuMvA3LQe40uXhPahhGtiw-A1a&sz=w1200"> alt="Dubai, UAE" loading="lazy"></div><div class="body"><h3>Dubai, UAE</h3><p style="color:var(--mut);font-size:14px">A trip built around your dates, hotel category and pace.</p><ul class="specs"><li><b>Duration:</b> <span class="placeholder-value" contenteditable="false">Add your details</span></li></ul><a class="btn blue" href="international-tours.html" style="margin-top:auto">Request Itinerary</a></div></article>
-    </div>
-  </div>
-</section>
-
-<!-- ============ re or ============ -->
-<!--<section class="soft">
-  <div class="w">
-    <div class="section-head"><h2 class="split-text">Discover Pakistan</h2><a class="btn blue" href="domestic-tours.html">All Tours</a></div>
-    <div class="grid bento">
-      <a href="domestic-tours.html" class="c3 r2"><div class="photo-frame" style="min-height:100%"><img src="assets/images/home/home-office.svg"  alt="Hunza" loading="lazy"><div class="cap"><h3>Hunza</h3><span>Request a plan</span></div></div></a>
-      <a href="domestic-tours.html" class="c3"><div class="photo-frame" style="min-height:100%"><img src="assets/images/home/home-office.svg"  alt="Skardu" loading="lazy"><div class="cap"><h3>Skardu</h3><span>Request a plan</span></div></div></a>
-      <a href="domestic-tours.html" class="c3"><div class="photo-frame" style="min-height:100%"><img src="assets/images/home/home-office.svg"  alt="Swat" loading="lazy"><div class="cap"><h3>Swat</h3><span>Request a plan</span></div></div></a>
-    </div>
-  </div>
-</section>-->
-
-<!-- ============ STATISTICS ============ -->
-<section class="dark">
-  <div class="w grid grid-4">
-    <div class="stat reveal"><b data-count="6">0</b>Package Types</div>
-<div class="stat reveal"><b data-count="6">0</b>International Destinations</div>
-<div class="stat reveal"><b data-count="6">0</b>Pakistan Destinations</div>
-<div class="stat reveal"><b data-count="4">0</b>Visa Categories</div>
-  </div>
-</section>
-
-<!-- ============ TESTIMONIALS ============ -->
-<section class="soft">
-  <div class="w">
-    <h2 class="split-text">What Travelers Will Say</h2>
-    <div class="testimonial-slider" style="margin-top:36px">
-      <blockquote class="on">&ldquo;Replace with a real client review, name and trip.&rdquo;</blockquote>
-      <blockquote>&ldquo;Second review placeholder. Add only reviews you have permission to publish.&rdquo;</blockquote>
-      <blockquote>&ldquo;Third review placeholder.&rdquo;</blockquote>
-    </div>
-    <div class="chips" id="testimonial-dots" style="margin-top:20px">
-      <button class="chip on">1</button><button class="chip">2</button><button class="chip">3</button>
-    </div>
-  </div>
-</section>
-
-<!-- ============ FINAL CTA ============ -->
-<section class="black">
-  <div class="w" style="text-align:center">
-    <h2 class="split-text" style="max-width:18ch;margin:auto">Ready When You Are</h2>
-    <p class="lead" style="margin:18px auto 30px">Tell us where you want to go. We will handle the rest.</p>
-    <a class="btn gold" href="contact.html">Plan Your Journey</a>
-  </div>
-</section>
-
+    <div class="field-error form-level" role="alert"></div>
+    <div class="form-success"></div>
+  </form>
+</div>
+</div></section>
 </main>
-
-<section class="hero1">
-
-  <div class="title">
-    <h2>
-      <span>Why</span>
-      <span>Travelers</span>
-      <span>Choose</span>
-      <strong>Hashmat</strong>
-      <strong>Travels</strong>
-      <strong>and Tours</strong>
-    </h2>
-  </div>
-  
-  <div class="stats glass">
-    <div><b class="counter" data-target="60">0</b><p>From budget adventures to<br>private luxury escapes</p></div>
-    <div><b class="counter" data-target="15">0</b><p>Perfecting meaningful travel<br>experiences since 2009</p></div>
-    <div><b class="counter" data-target="98">0</b><p>Most travelers come back to<br>plan their next trip</p></div>
-    <div><b class="counter" data-target="12">0</b><p>Journeys crafted for travelers<br>who return</p></div>
-  </div>
-  
-  <div class="cards">
-  
-  <div class="card">
-  <h3>Best Prices</h3>
-  <p>Amazing travel experiences with great value across tours, Umrah and Hajj packages.</p>
-  </div>
-  
-  <div class="card">
-  <h3>Wide Selection of Tours</h3>
-  <p>Domestic and international tours across many destinations, with flexible travel options.</p>
-  </div>
-  
-  <div class="card">
-  <h3>Best Flight Deals</h3>
-  <p>Competitive fares and trusted airline options for several destinations.</p>
-  </div>
-  
-  <div class="card">
-  <h3>Professional Tour Guide</h3>
-  <p>Helpful expert guidance for smooth travel planning and curated itineraries.</p>
-  </div>
-  
-  <div class="card">
-  <h3>Hotels & Resorts</h3>
-  <p>Comfortable stays and quality accommodation chosen to match your journey.</p>
-  </div>
-  
-  <div class="card">
-  <h3>Visa Assist</h3>
-  <p>Travel visa support and consultation for multiple destinations worldwide.</p>
-  </div>
-  
-  </div>
-</section>
 <!-- ============ FOOTER ============ -->
 <footer>
   <div class="w">
@@ -355,7 +242,11 @@ About Hashmat
         <a href="tel:+923237189361">+92 323 718 9361</a>
         <a href="https://wa.me/923009224346" target="_blank" rel="noopener">WhatsApp</a>
         <p style="margin-top:8px">Edward House CL-5/15, Sir Abdullah Haroon Road, Civil Lines, Karachi, Pakistan</p>
-        
+        <form class="newsletter-form" id="newsletter-form" action="php/newsletter.php" method="post" novalidate>
+          <input type="email" name="email" required placeholder="Email for travel updates" aria-label="Email">
+          <input type="text" name="website" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="btn gold" type="submit" style="padding:12px 18px">Join</button>
+        </form>
         <div class="field-error" id="newsletter-message" style="color:var(--gold)"></div>
       </div>
     </div>
@@ -365,27 +256,7 @@ About Hashmat
 <script src="assets/js/main.js"></script>
 <script src="assets/js/animations.js"></script>
 <script src="assets/js/booking.js"></script>
+<script src="assets/js/gallery.js"></script>
 </body>
 </html>
-
-<script>
-  const counters=document.querySelectorAll(".counter");
-  
-  counters.forEach(counter=>{
-  let target=Number(counter.dataset.target);
-  let count=0;
-  let speed=target/100;
-  
-  function update(){
-   count+=speed;
-   if(count<target){
-     counter.innerHTML=Math.floor(count)+"+";
-     requestAnimationFrame(update);
-   }else{
-     counter.innerHTML=target+(target===98?"%":"+");
-   }
-  }
-  update();
-  });
-  </script>
   
