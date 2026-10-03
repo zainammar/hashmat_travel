@@ -38,3 +38,18 @@ window.addEventListener('DOMContentLoaded', () => {
 </script>
 
 
+
+
+     <a href="index.html">Home</a>
+     <a href="about.html" class="on">About Us</a>
+     <a href="hajj-umrah.html">Hajj & Umrah</a>
+     <a href="international-tours.html">International Tours</a>
+     <a href="domestic-tours.html">Domestic Tours</a>
+     <a href="visas.html">Visa Services</a>
+     <a href="gallery.html">Gallery</a>
+     <a href="contact.html">Contact Us</a>
+     <a class="btn gold" href="contact.html">Plan Your Journey</a>
+      
+
+
+     
